@@ -1,18 +1,27 @@
 import { useState } from 'react'
 import './App.css'
+import Header from './Header'
+import Footer from './Footer'
+import Banner from './Banner'
+import Card from './Card'
+import Form from './Form'
 
 function App() {
   
   return (
-    <body className='min-h-screen bg-gray-400'>
-      <div>
-        <div>
-          <img src="" alt=""/>
-        </div>
-        <h2>titulo</h2>
-        <p>descripcion</p>
-      </div>      
-    </body>
+  <div>
+    <Header/>
+    <Banner/>
+    <div className='bg-gray-400 md:flex'>
+      <body className='container mx-auto pt-3 md:flex'>
+        <Card/>
+        <Card/>  
+      </body>
+    </div>
+    <Form/>       
+    <Footer/>
+  </div>
+    
   )
 }
 
